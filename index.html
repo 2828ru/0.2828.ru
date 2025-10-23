@@ -1,1 +1,111 @@
-<a href="htps://2828.ru/">Сайт обновляется..</a>
+<!DOCTYPE html><html lang="ru" manifest="/pro/1.manifest"><head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta content='true' name='HandheldFriendly'>
+<meta content='width' name='MobileOptimized'>
+<style type="text/css">
+* html .maket,body,html {
+height:100%;
+}
+#menu,.panel-text {
+text-align:center;
+}
+body,html {
+margin:0;
+padding:0;
+position:relative;
+background-color:#fff;
+font-family:Tahoma;
+font-size:20px;
+min-width:100vw;
+min-height:100vh;
+}
+.maket {
+width:100%;
+margin:0 auto;
+min-height:100%;
+}
+.panel-text {
+opacity:1;
+transition:opacity .6s ease-in-out;
+-moz-transition:opacity .6s ease-in-out;
+-webkit-transition:opacity .6s ease-in-out;
+width:90vw;
+height:90vh;
+font-size:3em;
+cursor:pointer;
+}
+#menu,.notice {
+position:relative;
+}
+.notice {
+margin-left:auto;
+margin-right:auto;
+margin-bottom:20px;
+width:300px;
+padding:8px;
+background-color:#e3f8d8;
+border-radius:8px;
+-moz-border-radius:8px;
+-webkit-border-radius:8px;
+color:#222;
+}
+.notice span {
+color:Maroon;
+}
+a {
+color:#00f;
+}</style>
+<script type="text/javascript">
+var i = 0;
+var answers = [
+"Вперед!",
+"Не сейчас",
+"Не делай<br>этого",
+"Ты шутишь?",
+"Да,<br>но позднее",
+"Думаю,<br>не стоит",
+"Не надейся<br>на это",
+"Ни в коем<br>случае",
+"Это неплохо",
+"Кто знает?",
+"Туманный ответ,<br>попробуй еще<br>",
+"Я не уверен",
+"Я думаю,<br>хорошо",
+"Забудь<br>об этом",
+"Это возможно",
+"Определенно -<br>да<br>",
+"Быть может",
+"Слишком<br>рано",
+"Да",
+"Конечно, да",
+"Даже<br>не думай",
+"Лучше Вам<br>пока этого<br>не знать"
+];
+var answers = [
+"зло",
+"боль",
+"беда",
+"молодость",
+"болезнь",
+"долголетие",
+"счастье",
+"неприятности",
+"проблемы",
+"ненависть",
+"агрессия",
+"любовь",
+"печаль",
+"богатство"
+];
+function $(m){
+return document.querySelector(m);
+}
+function mx(){
+$('.panel-text').style.opacity=0;
+i = Math.floor(Math.random() * answers.length);
+setTimeout(function(){
+$('.message').innerHTML=answers[i];
+$('.panel-text').style.opacity=1;
+},600);
+}
+</script><body><div class="maket"><div class="panel-ball" title="Click on the ball, to know the answer" onclick="mx()"><div class="panel-text" style="display: table; #position: relative; overflow: hidden;"><div style="#position: absolute; #top: 50%; display: table-cell; vertical-align: middle;"><div class="message" style="#position: relative; #top: -50%; #left: -50%;">Кликните,<br> чтобы узнать<br> ответ</div></div></div></div></div>
